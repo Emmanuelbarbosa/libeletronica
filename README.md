@@ -1,6 +1,5 @@
-== Esquema da fonte de Thevenin
+libeletronica
+=============
 
-Turma ENC-4NA
-Dupla: Jonhnatha Trigueiro e Emmanuel Barbosa
+Framework para abstração de circuitos eletrônicos
 
-Grupo Pi pi pi Tchu!

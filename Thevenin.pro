@@ -16,7 +16,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    resistor.cpp
+    libs/componente.cpp \
+    libs/resistor.cpp \
 
 HEADERS += \
-    resistor.h
+    libs/componente.h \
+    libs/resistor.h
