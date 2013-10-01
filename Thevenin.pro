@@ -18,7 +18,15 @@ TEMPLATE = app
 SOURCES += main.cpp \
     libs/componente.cpp \
     libs/resistor.cpp \
+    libs/fonte.cpp \
+    libs/circuito.cpp \
+    libs/circuitoserie.cpp \
+    libs/circuitoparalelo.cpp
 
 HEADERS += \
     libs/componente.h \
-    libs/resistor.h
+    libs/resistor.h \
+    libs/fonte.h \
+    libs/circuito.h \
+    libs/circuitoserie.h \
+    libs/circuitoparalelo.h
