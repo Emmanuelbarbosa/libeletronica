@@ -9,24 +9,22 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    CircuitoSerie malha1;
-    Resistor R1(6);
-    Resistor R2(6);
-    Fonte E1(12);
-    malha1 << R1 << R2 << E1;
 
-    CircuitoParalelo malha2;
-    Resistor R3(3);
-    Resistor R4(3);
-    malha2 << R3 << R4;
+    CircuitoSerie D3;
+    D3.append(Resistor(3));
+    D3.append(Fonte(10));
 
-    cout << malha1.count();
+    CircuitoParalelo D2;
+    D2.append(Resistor(13));
+    D2.appendCircuitoSerie(D3);
 
-    Resistor Resultado;
-    Resultado = R1 || R2;
+    CircuitoSerie D1;
+    D1.append(Fonte(20));
+    D1.appendCircuitoParalelo(D2);
 
-    cout << "Resistencia total da " << Resultado.getResistencia();
+    cout << D1.count();
     cout << "\n";
 
     return 0;
 }
+

@@ -4,11 +4,11 @@
 #include <QList>
 #include "libs/componente.h"
 
-class Circuito : public QList<Componente>
+class Circuito : public QList<Componente>, public Componente
 {
 public:
     Circuito();
-    void add(Componente Comp);
+    void appendMalha(Circuito Comp);
 };
 
 #endif // CIRCUITO_H

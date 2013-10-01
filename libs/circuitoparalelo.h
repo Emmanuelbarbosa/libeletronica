@@ -6,6 +6,7 @@ class CircuitoParalelo : public Circuito
 {
 public:
     CircuitoParalelo();
+    void appendCircuitoSerie(const QList<Componente> &t);
 };
 
 #endif // CIRCUITOPARALELO_H
